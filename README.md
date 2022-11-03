@@ -15,17 +15,17 @@ Steps:
   - and save the file
 4. open zookeeper.properties inside kafka_xx/config
 - and add dataDir=xxx\kafka_logs\zookeeper
-5. start zookeeper: bin/zookeeper-server-start.sh config/zookeeper.properties
-6. start kafka server: bin/kafka-server-start.sh config/server.properties
+5. start zookeeper: bin\windows\zookeeper-server-start.bat config\zookeeper.properties
+6. start kafka server: bin\windows\kafka-server-start.sh config\server.properties
 7. create topic : kafka_xx\bin\window\kafka-topics.bat --bootstrap-server localhost:9092 --topic first_topic --create --partitions 3 --replication-factor 1
 8. pip3 install kafka-python
 9. Producer.py : publishes message/data to topic
    - file_path = "image path"
-   - topic = "topic name "
+   - topic = "first_topic "
 10. consumer.py: consumes message from topic 
-    - topicName = 'topic name.'
+    - topicName = 'first_topic.'
 11. create folder data in the working directory.
-12 .Run both producer.py and consumer.py
+12. Run both producer.py and consumer.py
 
 
   
